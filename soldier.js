@@ -24,5 +24,11 @@ const soldier = {
             return "Не осталось припасов"
           }
     },
-    wound: function () {},
+    wound: function () {
+        if (this.health > 0){
+            this.health -= 1
+          } else {
+            return "Ты проиграл"
+          }
+    },
   };
